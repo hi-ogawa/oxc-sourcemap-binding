@@ -5,7 +5,7 @@
 	"main": "./dist/bundle.js",
 	"types": "./dist/bundle.d.ts",
 	"exports": {
-		".": "./src/index.js",
+		".": "./dist/index.js",
 		"./pkg/*": "./pkg/*"
 	},
 	"files": ["pkg/*", "dist/*"],
@@ -18,12 +18,15 @@
 		"build": "pnpm run --sequential /^build:/",
 		"build:wasm": "wasm-pack build --target web --out-name index ${BUILD_TYPE:---release}",
 		"build:fix-pkg": "rm -f pkg/package.json pkg/.gitignore pkg/README.md",
+		"build:ts": "tsup",
 		"lint": "cargo fmt && biome format --write",
 		"lint-check": "cargo fmt --check && biome format --check",
 		"test": "vitest"
 	},
 	"devDependencies": {
 		"@tsconfig/strictest": "^2.0.5",
+		"@types/node": "^22.10.2",
+		"tsup": "^8.3.5",
 		"typescript": "^5.7.2",
 		"vitest": "^2.1.8",
 		"wasm-pack": "^0.13.1"

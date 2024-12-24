@@ -1,6 +1,6 @@
 {
 	"extends": "@tsconfig/strictest/tsconfig.json",
-	"include": ["src"],
+	"include": ["*.ts", "src-js"],
 	"compilerOptions": {
 		"noEmit": true,
 		"module": "ESNext",
