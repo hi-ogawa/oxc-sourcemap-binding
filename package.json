@@ -19,8 +19,8 @@
     "build:wasm": "wasm-pack build --target web --out-name index ${BUILD_TYPE:---release}",
     "build:fix-pkg": "rm -f pkg/package.json pkg/.gitignore pkg/README.md",
     "build:ts": "tsup",
-    "lint": "cargo fmt && biome format --write",
-    "lint-check": "cargo fmt --check && biome format --check",
+    "lint": "cargo fmt && biome format --fix",
+    "lint-check": "cargo fmt --check && biome format",
     "test": "vitest"
   },
   "devDependencies": {
