@@ -1,9 +1,7 @@
 {
-  "name": "@hiogawa/oxc-sourcemap-wasm",
-  "version": "0.0.6-pre.5",
+  "name": "@hiogawa/oxc-sourcemap-binding",
+  "version": "0.0.0-pre.0",
   "type": "module",
-  "main": "./dist/bundle.js",
-  "types": "./dist/bundle.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./pkg/*": "./pkg/*"
