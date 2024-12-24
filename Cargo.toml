@@ -9,4 +9,3 @@ crate-type = ["cdylib"]
 [dependencies]
 wasm-bindgen = { version = "0.2.99" }
 oxc_sourcemap = { version = "1.0.4" }
-base64 = "0.22.1"
